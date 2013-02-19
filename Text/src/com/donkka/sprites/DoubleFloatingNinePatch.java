@@ -27,4 +27,8 @@ public class DoubleFloatingNinePatch {
 		updatePosition();
 		nine.draw(batch, pos.x, pos.y, dimensions.x, dimensions.y);
 	}
+	
+	public Vector2 getPos(){
+		return pos;
+	}
 }

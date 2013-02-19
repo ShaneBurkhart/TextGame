@@ -1,0 +1,42 @@
+package com.donkka.screens;
+
+import com.donkka.patches.RecentlyPlayedNinePatch;
+import com.donkka.sprites.DoubleFloatingNinePatch;
+
+public class GameScreen extends ShaneScreen{
+	
+	DoubleFloatingNinePatch recentlyPlayed;
+	
+	public GameScreen(){
+		recentlyPlayed = new DoubleFloatingNinePatch(10, 100, 400, RecentlyPlayedNinePatch.getInstance());
+	}
+
+	@Override
+	public void render(float delta) {
+		super.render(delta);
+		batch.begin();
+	
+		batch.end();
+	}
+
+	@Override
+	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
+		camera.unproject(touchPos.set(screenX, screenY, 0));
+		
+		return false;
+	}
+
+	@Override
+	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
+		camera.unproject(touchPos.set(screenX, screenY, 0));
+		
+		return false;
+	}
+
+	@Override
+	public boolean touchDragged(int screenX, int screenY, int pointer) {
+		camera.unproject(touchPos.set(screenX, screenY, 0));
+		
+		return false;
+	}
+}

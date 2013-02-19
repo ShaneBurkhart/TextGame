@@ -5,7 +5,6 @@ import com.donkka.art.Art;
 import com.donkka.entities.BackgroundLetterGenerator;
 import com.donkka.helpers.Dimensions;
 import com.donkka.patches.HighScoreNinePatch;
-import com.donkka.sprites.DoubleFloatingNinePatch;
 import com.donkka.sprites.FloatingNinePatch;
 import com.donkka.sprites.buttons.PlayButton;
 import com.donkka.sprites.buttons.SettingsButton;
@@ -18,14 +17,12 @@ public class MainMenu extends ShaneScreen{
 	PlayButton playButton;
 	SettingsButton settingsButton;
 	FloatingNinePatch highScoreBackground;
-	DoubleFloatingNinePatch nine;
 	
 	public MainMenu(){
 		letters = new BackgroundLetterGenerator();
 		playButton = new PlayButton(new Vector2(240 - Art.play.getWidth() / 2, 400 - Art.play.getHeight() / 2), Art.play);
 		settingsButton = new SettingsButton(10, 10, Dimensions.Floats.LEFT, Art.settings);
 		highScoreBackground = new FloatingNinePatch(10, 0, 190, 100, Dimensions.Floats.RIGHT, HighScoreNinePatch.getInstance());
-		nine = new DoubleFloatingNinePatch(10, 200, 300, HighScoreNinePatch.getInstance());
 	}
 
 	@Override
@@ -36,7 +33,6 @@ public class MainMenu extends ShaneScreen{
 		letters.render(batch);
 		settingsButton.render(batch);
 		highScoreBackground.render(batch);
-		nine.render(batch);
 		playButton.render(batch);
 		batch.end();
 	}

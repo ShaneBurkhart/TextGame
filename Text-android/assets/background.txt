@@ -2,13 +2,6 @@ background.png
 format: RGBA8888
 filter: MipMapLinearLinear,MipMapLinearLinear
 repeat: none
-highscorepatch
-  rotate: false
-  xy: 482, 1
-  size: 190, 80
-  orig: 190, 80
-  offset: 0, 0
-  index: -1
 background
   rotate: false
   xy: 1, 1

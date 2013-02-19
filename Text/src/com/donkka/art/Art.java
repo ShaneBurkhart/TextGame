@@ -9,7 +9,10 @@ import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 public class Art {
 
 	private static TextureAtlas taBackground;
-	public static Sprite background, highScorePatch;
+	public static Sprite background;
+	
+	private static TextureAtlas taPatches;
+	public static Sprite highScorePatch, recentlyPlayedPatch;
 	
 	private static TextureAtlas taTiles;
 	public static Sprite[] largeTiles;
@@ -21,7 +24,10 @@ public class Art {
 	public static void init(){
 		taBackground = new TextureAtlas(Gdx.files.internal("background.txt"));
 		background = taBackground.createSprite("background");
-		highScorePatch = taBackground.createSprite("highscorepatch");
+		
+		taPatches = new TextureAtlas(Gdx.files.internal("patches.txt"));
+		highScorePatch = taPatches.createSprite("highscorepatch");
+		recentlyPlayedPatch = taPatches.createSprite("recent");
 		
 		largeTiles = new Sprite[9];
 		char[] letters = {'V', 'P', 'M', 'T', 'L', 'B', 'S', 'E', 'A'};
