@@ -1,0 +1,16 @@
+package com.donkka.sprites;
+
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+public class HighScore extends FloatingSprite{
+
+	public HighScore(float xOffset, float yOffset, int dimensionFloat, Sprite sprite) {
+		super(xOffset, yOffset, dimensionFloat, sprite);
+	}
+
+	@Override
+	public void render(SpriteBatch batch) {
+		
+	}
+}

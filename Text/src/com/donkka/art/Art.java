@@ -5,11 +5,8 @@ import java.util.Random;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
-import com.donkka.entities.HDSprite;
 
 public class Art {
-	
-	public static final float HD_SCALE = .5f;
 
 	private static TextureAtlas taBackground;
 	public static Sprite background, highScorePatch;
@@ -18,7 +15,7 @@ public class Art {
 	public static Sprite[] largeTiles;
 	
 	private static TextureAtlas taButtons;
-	public static HDSprite play, playTouched, settings;
+	public static Sprite play, playTouched, settings;
 	
 	
 	public static void init(){
@@ -32,9 +29,10 @@ public class Art {
 		for(int i = 0 ; i < letters.length ; i ++)
 			largeTiles[i] = taTiles.createSprite(letters[i] + "");
 		
+		
 		taButtons = new TextureAtlas(Gdx.files.internal("buttons.txt"));
-		play = new HDSprite(taButtons.createSprite("play"));
-		//settings = taButtons.createSprite("settings");
+		play = new Sprite(taButtons.createSprite("play"));
+		settings = taButtons.createSprite("settings");
 	}
 	
 	private static Random rand = new Random();

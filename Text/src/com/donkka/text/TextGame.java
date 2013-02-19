@@ -1,7 +1,9 @@
 package com.donkka.text;
 
 import com.badlogic.gdx.Game;
+import com.badlogic.gdx.Gdx;
 import com.donkka.art.Art;
+import com.donkka.helpers.Dimensions;
 import com.donkka.helpers.GameManager;
 import com.donkka.screens.MainMenu;
 import com.donkka.screens.ParentGameScreen;
@@ -11,6 +13,9 @@ public class TextGame extends Game {
 
 	@Override
 	public void create() {
+		//Init Dimensions
+		Dimensions.resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
+		
 		//Init Graphics.  Later will do this in an asynchronous task so not to slow down
 		Art.init();
 		

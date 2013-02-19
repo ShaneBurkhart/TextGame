@@ -13,8 +13,8 @@ public class BackgroundLetterGenerator {
 	private final float RATE_TO_ADD = .5f;
 	private final float MAX_VELOCITY = 400f;
 	private final float MIN_VELOCITY = 200f;
-	private final float MAX_SCALE = Art.HD_SCALE;
-	private final float MIN_SCALE = Art.HD_SCALE * .4f;
+	private final float MAX_SCALE = 1;
+	private final float MIN_SCALE = .4f;
 	
 	MovingTile[] tiles;
 	private float time = 0;

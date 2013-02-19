@@ -1,0 +1,10 @@
+package com.donkka.sprites;
+
+import com.badlogic.gdx.graphics.g2d.NinePatch;
+
+public class TestNine extends DoubleFloatingNinePatch{
+
+	public TestNine(float xPadding, float yOffset, float height, NinePatch nine) {
+		super(xPadding, yOffset, height, nine);
+	}
+}

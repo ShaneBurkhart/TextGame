@@ -1,6 +1,6 @@
 background.png
 format: RGBA8888
-filter: Linear,Linear
+filter: MipMapLinearLinear,MipMapLinearLinear
 repeat: none
 highscorepatch
   rotate: false

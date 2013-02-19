@@ -1,0 +1,18 @@
+package com.donkka.sprites;
+
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.donkka.patches.HighScoreNinePatch;
+
+public class HighScore extends FloatingSprite{
+
+	public HighScore(float xOffset, float yOffset, int dimensionFloat, float width, float height) {
+		super(xOffset, yOffset, dimensionFloat, null);
+	}
+
+	@Override
+	public void render(SpriteBatch batch) {
+		updatePosition();
+		HighScoreNinePatch.getInstance().draw(batch, pos.x, pos.y, width, height)
+	}
+}

@@ -1,0 +1,25 @@
+package com.donkka.entities;
+
+import com.badlogic.gdx.graphics.g2d.Sprite;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.math.Vector2;
+import com.donkka.helpers.Dimensions;
+
+public class FloatingSprite {
+	protected Sprite sprite;
+	protected Vector2 pos;
+	protected float scale = 1;
+	protected int dimensionFloat = Dimensions.Floats.LEFT;
+	
+	public FloatingSprite(float xOffset, int dimensionFloat, Sprite sprite){
+		this.sprite = sprite;
+		
+	}
+	
+	public void render(SpriteBatch batch){
+		if()
+		sprite.setPosition(pos.x, pos.y);
+		sprite.setScale(scale);
+		sprite.draw(batch);
+	}
+}

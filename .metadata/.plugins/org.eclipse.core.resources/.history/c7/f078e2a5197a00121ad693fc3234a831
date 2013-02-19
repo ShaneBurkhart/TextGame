@@ -1,0 +1,5 @@
+package com.donkka.sprites;
+
+public class TestNine extends DoubleFloatingNinePatch{
+
+}

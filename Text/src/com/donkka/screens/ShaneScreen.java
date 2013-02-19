@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector3;
+import com.donkka.helpers.Dimensions;
 
 public abstract class ShaneScreen implements Screen, InputProcessor{
 	
@@ -23,9 +24,9 @@ public abstract class ShaneScreen implements Screen, InputProcessor{
 		shapes = new ShapeRenderer();
 		float w = Gdx.graphics.getWidth();
 		float h = Gdx.graphics.getHeight();
-		camera.viewportWidth = 960;
-		camera.viewportHeight = h / w * 960f;
-		camera.position.set(240, 400, 0);
+		camera.viewportHeight = Dimensions.getTargetHeight();
+		camera.viewportWidth = w / h * Dimensions.getTargetHeight();
+		camera.position.set(Dimensions.getTargetWidth() / 2, Dimensions.getTargetHeight() / 2, 0);
 		camera.update();
 	}
 
@@ -42,9 +43,11 @@ public abstract class ShaneScreen implements Screen, InputProcessor{
 		//Resize to stretch camera to show more but not scale sprites
 		float w = width;
 		float h = height;
-		camera.viewportWidth = 480;
-		camera.viewportHeight = h / w * 480f;
-		camera.position.set(240, 400, 0);
+		camera.viewportWidth = w / h * Dimensions.getTargetHeight();
+		camera.viewportHeight = Dimensions.getTargetHeight();
+		camera.position.set(Dimensions.getTargetWidth() / 2, Dimensions.getTargetHeight() / 2, 0);
+		camera.update();
+		Dimensions.resize(width, height);
 	}
 
 	@Override
