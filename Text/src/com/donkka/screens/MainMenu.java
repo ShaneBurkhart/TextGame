@@ -23,22 +23,21 @@ public class MainMenu extends ShaneScreen{
 	public MainMenu(){
 		letters = new BackgroundLetterGenerator();
 		playButton = new PlayButton(new Vector2(240 - Art.play.getWidth() / 2, 400 - Art.play.getHeight() / 2), Art.play);
-		settingsButton = new SettingsButton(20, 20, Dimensions.Floats.LEFT, Art.settings);
-		highScoreBackground = new FloatingNinePatch(20, 0, 190, 100, Dimensions.Floats.RIGHT, HighScoreNinePatch.getInstance());
-		nine = new DoubleFloatingNinePatch(20, 200, 300, HighScoreNinePatch.getInstance());
+		settingsButton = new SettingsButton(10, 10, Dimensions.Floats.LEFT, Art.settings);
+		highScoreBackground = new FloatingNinePatch(10, 0, 190, 100, Dimensions.Floats.RIGHT, HighScoreNinePatch.getInstance());
+		nine = new DoubleFloatingNinePatch(10, 200, 300, HighScoreNinePatch.getInstance());
 	}
 
 	@Override
 	public void render(float delta) {
 		super.render(delta);
-		
 		batch.begin();
 		letters.update(delta, camera);
 		letters.render(batch);
-		playButton.render(batch);
 		settingsButton.render(batch);
 		highScoreBackground.render(batch);
 		nine.render(batch);
+		playButton.render(batch);
 		batch.end();
 	}
 

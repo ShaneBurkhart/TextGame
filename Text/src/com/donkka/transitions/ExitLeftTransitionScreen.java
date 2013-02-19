@@ -1,11 +1,11 @@
 package com.donkka.transitions;
 
+import com.donkka.helpers.Dimensions;
 import com.donkka.helpers.GameManager;
 import com.donkka.screens.ShaneScreen;
 
 public class ExitLeftTransitionScreen extends ShaneScreen{
-	private final float DURATION = .4f;
-	private float slideVelocity = 0;
+	private float slideVelocity = Dimensions.getWidth() / TransitionSettings.DURATION;
 	private ShaneScreen nextScreen, currentScreen;
 	private float finalX;
 	
@@ -14,7 +14,6 @@ public class ExitLeftTransitionScreen extends ShaneScreen{
 		this.currentScreen = current;
 		this.finalX = camera.position.x;
 		this.nextScreen.camera.position.x = this.nextScreen.camera.position.x - this.nextScreen.camera.viewportWidth;
-		this.slideVelocity = this.camera.viewportWidth / DURATION;
 	}
 	
 	@Override

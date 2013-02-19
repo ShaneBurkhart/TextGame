@@ -4,7 +4,7 @@ import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.math.Vector2;
 import com.donkka.helpers.GameManager;
 import com.donkka.screens.MainMenu;
-import com.donkka.transitions.FadeTransitionScreen;
+import com.donkka.transitions.ExitRightTransitionScreen;
 
 public class PlayButton extends ShaneButton{
 
@@ -22,7 +22,7 @@ public class PlayButton extends ShaneButton{
 
 	@Override
 	public void onTouchUp(float x, float y) {
-		GameManager.getInstance().setScreen(new FadeTransitionScreen(GameManager.getInstance().getGame().getScreen(), new MainMenu()));
+		GameManager.getInstance().setScreen(new ExitRightTransitionScreen(GameManager.getInstance().getGame().getScreen(), new MainMenu()));
 	}
 	
 }

@@ -17,7 +17,6 @@ public class Dimensions {
 		viewPortLeft = TARGET_WIDTH / 2 - viewPortWidth / 2;
 		viewPortRight = TARGET_WIDTH / 2 + viewPortWidth / 2;		
 		viewPortTop = TARGET_HEIGHT; 
-		System.out.println(viewPortLeft + " " + viewPortTop);
 	}
 	
 	public static float getLeft(){

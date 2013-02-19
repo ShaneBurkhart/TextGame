@@ -1,0 +1,5 @@
+package com.donkka.transitions;
+
+public class TransitionSettings {
+
+}

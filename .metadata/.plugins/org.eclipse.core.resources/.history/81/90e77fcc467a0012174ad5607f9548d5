@@ -1,0 +1,5 @@
+package com.donkka.transitions;
+
+public class TransitionSettings {
+	public static final float SLIDE_VELOCITY = 2000f;
+}

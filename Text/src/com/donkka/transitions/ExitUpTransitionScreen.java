@@ -1,20 +1,19 @@
 package com.donkka.transitions;
 
+import com.donkka.helpers.Dimensions;
 import com.donkka.helpers.GameManager;
 import com.donkka.screens.ShaneScreen;
 
 public class ExitUpTransitionScreen extends ShaneScreen{
-	private final float DURATION = .4f;
-	private float slideVelocity = 0;
+	private float slideVelocity = Dimensions.getHeight() / TransitionSettings.DURATION;
 	private ShaneScreen nextScreen, currentScreen;
 	private float finalY;
 	
 	public ExitUpTransitionScreen(ShaneScreen current, ShaneScreen next){
 		this.nextScreen = next;
 		this.currentScreen = current;
-		this.finalY = 240;
+		this.finalY = Dimensions.getTargetHeight() / 2;
 		this.nextScreen.camera.position.y = this.nextScreen.camera.position.y + this.nextScreen.camera.viewportHeight;
-		this.slideVelocity = this.camera.viewportHeight / DURATION;
 	}
 	
 	@Override
@@ -22,7 +21,7 @@ public class ExitUpTransitionScreen extends ShaneScreen{
 		super.render(delta);
 		
 		if(currentScreen != null){
-			currentScreen.camera.position.y = Math.max(finalY - 480, currentScreen.camera.position.y - delta * slideVelocity);
+			currentScreen.camera.position.y = Math.max(finalY - Dimensions.getTargetHeight(), currentScreen.camera.position.y - delta * slideVelocity);
 			currentScreen.render(0);
 		}
 		
