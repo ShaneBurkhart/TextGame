@@ -5,6 +5,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector2;
 import com.donkka.art.Art;
+import com.donkka.debug.DBug;
 import com.donkka.patches.RecentlyPlayedNinePatch;
 import com.donkka.sprites.DoubleFloatingNinePatch;
 
@@ -43,12 +44,15 @@ public class RecentlyPlayed{
 			items[i] = items[i - 1];
 		}
 		items[0] = new RecentlyPlayedListItem(word);
+		DBug.print("Word Added: " + word.toUpperCase());
 	}
 	
 	public class RecentlyPlayedListItem{
 		
 		private static final float MARGIN = 20;
-		private static final float ANIM_VEL = 500;
+		private static final float ANIMATION_DURATION = .2f;
+		private float ANIM_VEL = 0;
+		private float ALPHA_VEL = 0;
 		private static final float HEIGHT = 50;
 		private static final float WIDTH = 50;
 		private static final float VERTICAL_SPACING = 15;
@@ -58,11 +62,15 @@ public class RecentlyPlayed{
 		public Vector2 pos;
 		private Vector2 targetPos;
 		ShapeRenderer shapes = new ShapeRenderer();
+		private boolean isDying = false;
+		private float alpha = 0;
 		
 		public RecentlyPlayedListItem(String word){
 			this.word = word.toLowerCase();
 			this.pos = new Vector2(background.getPos().x + MARGIN, background.getPos().y + MARGIN);
 			this.targetPos = new Vector2(pos.x, pos.y);
+			this.ANIM_VEL = (HEIGHT + VERTICAL_SPACING) / ANIMATION_DURATION;
+			this.ALPHA_VEL = 1 / ANIMATION_DURATION;
 		}
 		
 		public void render(SpriteBatch batch){
@@ -70,7 +78,9 @@ public class RecentlyPlayed{
 			float x = pos.x;
 			for(int i = 0 ; i < word.length() ; i ++){
 				c = word.charAt(i);
+				Art.getTile(c).setColor(1, 1, 1, alpha);
 				Art.getTile(c).setPosition(x, pos.y);
+				Art.getTile(c).setScale(1);
 				Art.getTile(c).draw(batch);
 				x += WIDTH + HORIZONTAL_SPACING;
 			}
@@ -79,6 +89,10 @@ public class RecentlyPlayed{
 		public void update(float delta){
 			float y = Math.min(targetPos.y, pos.y + ANIM_VEL * delta);
 			this.pos.set(background.getPos().x + MARGIN, y);
+			if(isDying)
+				alpha = Math.max(alpha - ALPHA_VEL * delta, 0);
+			else
+				alpha = Math.min(alpha + ALPHA_VEL * delta, 1);
 		}
 		
 		public void animate(float y){
@@ -86,7 +100,10 @@ public class RecentlyPlayed{
 		}
 		
 		public void moveUp(){
-			this.animate(this.targetPos.y + HEIGHT + VERTICAL_SPACING);
+			if(this.targetPos.y + HEIGHT + VERTICAL_SPACING > background.getPos().y + background.getDimensions().y - MARGIN)
+				isDying = true;
+			else
+				this.animate(this.targetPos.y + HEIGHT + VERTICAL_SPACING);
 		}
 		
 		public Vector2 getTargetPos(){
@@ -94,7 +111,7 @@ public class RecentlyPlayed{
 		}
 		
 		public boolean isDead(){
-			return targetPos.y + HEIGHT > background.getPos().y + background.getDimensions().y - MARGIN;
+			return isDying && alpha == 0;
 		}
 	}
 }

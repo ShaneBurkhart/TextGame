@@ -21,9 +21,19 @@
 <fullyQualifiedTypeName name="com.donkka.sprites.DoubleFloatingNinePatch"/>
 <fullyQualifiedTypeName name="com.donkka.patches.RecentlyPlayedNinePatch"/>
 <fullyQualifiedTypeName name="com.donkka.entities.RecentlyPlayed"/>
-<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Color"/>
-<fullyQualifiedTypeName name="com.badlogic.gdx.Gdx"/>
-<fullyQualifiedTypeName name="com.badlogic.gdx.math.Vector2"/>
 <fullyQualifiedTypeName name="com.donkka.entities.RecentlyPlayed.RecentlyPlayedListItem"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Color"/>
+<fullyQualifiedTypeName name="com.donkka.helpers.Dictionary"/>
+<fullyQualifiedTypeName name="com.donkka.debug.Debug"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.math.Vector2"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.g2d.Sprite"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.Gdx"/>
+<fullyQualifiedTypeName name="com.donkka.entities.TileInterface.Tile"/>
+<fullyQualifiedTypeName name="java.lang.Math"/>
+<fullyQualifiedTypeName name="com.donkka.entities.TileInterface"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="sun.security.pkcs11.Secmod.DbMode"/>
+<fullyQualifiedTypeName name="com.donkka.debug.DBug"/>
 <fullyQualifiedTypeName name="com.donkka.art.Art"/>
+<fullyQualifiedTypeName name="com.donkka.text.TouchEvent"/>
 </qualifiedTypeNameHistroy>

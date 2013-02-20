@@ -1,5 +1,7 @@
 package com.donkka.helpers;
 
+import com.donkka.debug.DBug;
+
 public class Dimensions {
 	
 	private static final float TARGET_WIDTH = 480f;
@@ -17,6 +19,7 @@ public class Dimensions {
 		viewPortLeft = TARGET_WIDTH / 2 - viewPortWidth / 2;
 		viewPortRight = TARGET_WIDTH / 2 + viewPortWidth / 2;		
 		viewPortTop = TARGET_HEIGHT; 
+		DBug.print("Resized Dimensions...");
 	}
 	
 	public static float getLeft(){

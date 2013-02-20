@@ -1,0 +1,10 @@
+package com.donkka.debug;
+
+public class Debug {
+
+	private static final int DEBUG = 0x1;
+	
+	public static void print(String s){
+		System.out.println(s);
+	}
+}

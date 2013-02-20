@@ -5,6 +5,7 @@ import java.util.Random;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
+import com.donkka.debug.DBug;
 
 public class Art {
 
@@ -44,6 +45,8 @@ public class Art {
 		taButtons = new TextureAtlas(Gdx.files.internal("buttons.txt"));
 		play = new Sprite(taButtons.createSprite("play"));
 		settings = taButtons.createSprite("settings");
+		
+		DBug.print("Art Initialized...");
 	}
 	
 	private static Random rand = new Random();

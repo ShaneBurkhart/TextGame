@@ -1,0 +1,57 @@
+package com.donkka.helpers;
+
+import com.badlogic.gdx.Gdx;
+
+public class Dictionary {
+
+	private static Dictionary instance;
+	String[] words;
+	
+	private Dictionary(){
+		loadWords();
+	}
+	
+	public static Dictionary getInstance(){
+		if(instance == null)
+			instance = new Dictionary();
+		return instance;
+	}
+	
+	public boolean isWord(String word){
+		String wordLower = word.toLowerCase();
+		int minIndex = 0;
+		int maxIndex = words.length - 1;
+		int currentIndex = 0;
+		String currentWord;
+		char myChar = 0, indexChar = 0;
+		int charIndex = 0;
+		while(minIndex != maxIndex){
+			charIndex = 0;
+			myChar = indexChar = 0;
+			currentIndex = maxIndex + minIndex / 2;
+			currentWord = words[currentIndex];
+			//Equal then return true;
+			if(currentWord.equals(wordLower))
+				return true;
+			//Figure out where to cut down search
+			while(myChar == indexChar){
+				myChar = wordLower.charAt(charIndex);
+				indexChar = currentWord.charAt(charIndex);
+				charIndex++;
+			}
+			if(myChar > indexChar)
+				minIndex = currentIndex;
+			else
+				maxIndex = currentIndex
+		}
+		return false;
+	}
+	
+	public String[] getPossibleWords(char[] chars){
+		return null;
+	}
+	
+	private void loadWords(){
+		words = Gdx.files.internal("data/dictionary.txt").readString().split("\n\r");
+	}
+}

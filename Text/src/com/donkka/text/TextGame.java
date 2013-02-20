@@ -3,6 +3,7 @@ package com.donkka.text;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;
 import com.donkka.art.Art;
+import com.donkka.helpers.Dictionary;
 import com.donkka.helpers.Dimensions;
 import com.donkka.helpers.GameManager;
 import com.donkka.screens.MainMenu;
@@ -13,6 +14,9 @@ public class TextGame extends Game {
 
 	@Override
 	public void create() {
+		//Init Dictionary
+		Dictionary.getInstance();
+		
 		//Init Dimensions
 		Dimensions.resize(Gdx.graphics.getWidth(), Gdx.graphics.getHeight());
 		

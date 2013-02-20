@@ -1,5 +1,6 @@
 package com.donkka.helpers;
 
+import com.donkka.debug.DBug;
 import com.donkka.screens.ParentGameScreen;
 import com.donkka.screens.ShaneScreen;
 
@@ -24,6 +25,7 @@ public class GameManager {
 	
 	public void init(ParentGameScreen game){
 		this.game = game;
+		DBug.print("GameManager Initialized...");
 	}
 	
 	public void setScreen(ShaneScreen screen){
