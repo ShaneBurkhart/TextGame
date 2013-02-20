@@ -1,13 +1,10 @@
 package com.donkka.entities;
 
-import java.util.ArrayList;
-
 import com.badlogic.gdx.Gdx;
-import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
-import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.Vector2;
+import com.donkka.art.Art;
 import com.donkka.patches.RecentlyPlayedNinePatch;
 import com.donkka.sprites.DoubleFloatingNinePatch;
 
@@ -15,36 +12,47 @@ public class RecentlyPlayed{
 	
 	private static final float MARGIN_X = 10;
 
-	private ArrayList<RecentlyPlayedListItem> items;
+	private RecentlyPlayedListItem[] items;
 	private DoubleFloatingNinePatch background;
 	
 	public RecentlyPlayed(float marginTop, float height){
 		background = new DoubleFloatingNinePatch(MARGIN_X, marginTop, height, RecentlyPlayedNinePatch.getInstance());
-		items = new ArrayList<RecentlyPlayed.RecentlyPlayedListItem>();
+		items = new RecentlyPlayed.RecentlyPlayedListItem[20];
 	}
 	
 	public void render(SpriteBatch batch){
 		background.render(batch);
-		for(RecentlyPlayedListItem i: items){
-			if(i != null){
-				i.update(Gdx.graphics.getDeltaTime());
-				i.render(batch);
+		for(int i = 0 ; i < items.length ; i ++){
+			RecentlyPlayedListItem item = items[i];
+			if(item != null){
+				item.update(Gdx.graphics.getDeltaTime());
+				item.render(batch);
+				if(item.isDead())
+					items[i] = null;
 			}
 		}
 	}
 	
 	public void add(String word){
-		for(RecentlyPlayedListItem i: items)
-			i.moveUp();
-		items.add(new RecentlyPlayedListItem(word));
+		for(RecentlyPlayedListItem i: items){
+			if(i != null)
+				i.moveUp();
+		}
+		//Shift up
+		for(int i = items.length - 1 ; i > 0 ; i --){
+			items[i] = items[i - 1];
+		}
+		items[0] = new RecentlyPlayedListItem(word);
 	}
 	
 	public class RecentlyPlayedListItem{
 		
 		private static final float MARGIN = 20;
-		private static final float ANIM_VEL = 100;
-		private static final float HEIGHT = 40;
-		private static final float MARGIN_TOP = 5;
+		private static final float ANIM_VEL = 500;
+		private static final float HEIGHT = 50;
+		private static final float WIDTH = 50;
+		private static final float VERTICAL_SPACING = 15;
+		private static final float HORIZONTAL_SPACING = 5;
 		
 		public String word;
 		public Vector2 pos;
@@ -52,19 +60,20 @@ public class RecentlyPlayed{
 		ShapeRenderer shapes = new ShapeRenderer();
 		
 		public RecentlyPlayedListItem(String word){
-			this.word = word;
+			this.word = word.toLowerCase();
 			this.pos = new Vector2(background.getPos().x + MARGIN, background.getPos().y + MARGIN);
 			this.targetPos = new Vector2(pos.x, pos.y);
 		}
 		
 		public void render(SpriteBatch batch){
-			batch.end();
-			shapes.setProjectionMatrix(batch.getProjectionMatrix());
-			shapes.begin(ShapeType.Filled);
-			shapes.setColor(Color.BLACK);
-			shapes.rect(pos.x, pos.y, 200, HEIGHT);
-			shapes.end();
-			batch.begin();
+			char c;
+			float x = pos.x;
+			for(int i = 0 ; i < word.length() ; i ++){
+				c = word.charAt(i);
+				Art.getTile(c).setPosition(x, pos.y);
+				Art.getTile(c).draw(batch);
+				x += WIDTH + HORIZONTAL_SPACING;
+			}
 		}
 		
 		public void update(float delta){
@@ -77,11 +86,15 @@ public class RecentlyPlayed{
 		}
 		
 		public void moveUp(){
-			this.animate(this.targetPos.y + HEIGHT + MARGIN_TOP);
+			this.animate(this.targetPos.y + HEIGHT + VERTICAL_SPACING);
 		}
 		
 		public Vector2 getTargetPos(){
 			return targetPos;
+		}
+		
+		public boolean isDead(){
+			return targetPos.y + HEIGHT > background.getPos().y + background.getDimensions().y - MARGIN;
 		}
 	}
 }

@@ -2,11 +2,18 @@ tiles.png
 format: RGBA8888
 filter: MipMapLinearLinear,MipMapLinearLinear
 repeat: none
-M
+T
   rotate: false
-  xy: 2, 610
+  xy: 2, 154
   size: 150, 150
   orig: 150, 150
+  offset: 0, 0
+  index: -1
+y
+  rotate: false
+  xy: 2, 966
+  size: 50, 50
+  orig: 50, 50
   offset: 0, 0
   index: -1
 P
@@ -16,39 +23,123 @@ P
   orig: 150, 150
   offset: 0, 0
   index: -1
-A
+u
   rotate: false
-  xy: 458, 2
+  xy: 106, 966
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+L
+  rotate: false
+  xy: 2, 762
   size: 150, 150
   orig: 150, 150
   offset: 0, 0
   index: -1
-B
+q
   rotate: false
-  xy: 306, 2
+  xy: 770, 2
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+m
+  rotate: false
+  xy: 614, 54
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+i
+  rotate: false
+  xy: 822, 54
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+e
+  rotate: false
+  xy: 666, 106
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+a
+  rotate: false
+  xy: 874, 106
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+z
+  rotate: false
+  xy: 2, 914
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+v
+  rotate: false
+  xy: 106, 914
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+M
+  rotate: false
+  xy: 2, 610
   size: 150, 150
   orig: 150, 150
   offset: 0, 0
   index: -1
-S
+r
   rotate: false
-  xy: 2, 306
-  size: 150, 150
-  orig: 150, 150
+  xy: 718, 2
+  size: 50, 50
+  orig: 50, 50
   offset: 0, 0
   index: -1
-T
+n
   rotate: false
-  xy: 2, 154
-  size: 150, 150
-  orig: 150, 150
+  xy: 926, 2
+  size: 50, 50
+  orig: 50, 50
   offset: 0, 0
   index: -1
 E
   rotate: false
-  xy: 154, 2
+  xy: 158, 2
   size: 150, 150
   orig: 150, 150
+  offset: 0, 0
+  index: -1
+j
+  rotate: false
+  xy: 770, 54
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+A
+  rotate: false
+  xy: 462, 2
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+f
+  rotate: false
+  xy: 614, 106
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+b
+  rotate: false
+  xy: 822, 106
+  size: 50, 50
+  orig: 50, 50
   offset: 0, 0
   index: -1
 V
@@ -58,10 +149,101 @@ V
   orig: 150, 150
   offset: 0, 0
   index: -1
-L
+w
   rotate: false
-  xy: 2, 762
+  xy: 54, 966
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+s
+  rotate: false
+  xy: 666, 2
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+o
+  rotate: false
+  xy: 874, 2
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+k
+  rotate: false
+  xy: 718, 54
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+B
+  rotate: false
+  xy: 310, 2
   size: 150, 150
   orig: 150, 150
+  offset: 0, 0
+  index: -1
+g
+  rotate: false
+  xy: 926, 54
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+c
+  rotate: false
+  xy: 770, 106
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+S
+  rotate: false
+  xy: 2, 306
+  size: 150, 150
+  orig: 150, 150
+  offset: 0, 0
+  index: -1
+x
+  rotate: false
+  xy: 54, 914
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+t
+  rotate: false
+  xy: 614, 2
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+p
+  rotate: false
+  xy: 822, 2
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+l
+  rotate: false
+  xy: 666, 54
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+h
+  rotate: false
+  xy: 874, 54
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
+d
+  rotate: false
+  xy: 718, 106
+  size: 50, 50
+  orig: 50, 50
   offset: 0, 0
   index: -1

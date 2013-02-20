@@ -15,7 +15,7 @@ public class Art {
 	public static Sprite highScorePatch, recentlyPlayedPatch;
 	
 	private static TextureAtlas taTiles;
-	public static Sprite[] largeTiles;
+	public static Sprite[] largeTiles, tiles;
 	
 	private static TextureAtlas taButtons;
 	public static Sprite play, playTouched, settings;
@@ -34,7 +34,12 @@ public class Art {
 		taTiles = new TextureAtlas(Gdx.files.internal("tiles.txt"));
 		for(int i = 0 ; i < letters.length ; i ++)
 			largeTiles[i] = taTiles.createSprite(letters[i] + "");
-		
+		tiles = new Sprite[26];
+		char c = 'a';
+		for(int i = 0 ; i < tiles.length ; i ++){
+			tiles[i] = taTiles.createSprite(c + "");
+			c++;
+		}
 		
 		taButtons = new TextureAtlas(Gdx.files.internal("buttons.txt"));
 		play = new Sprite(taButtons.createSprite("play"));
@@ -45,5 +50,9 @@ public class Art {
 	
 	public static Sprite getRandomLargeTile(){
 		return largeTiles[rand.nextInt(9)];
+	}
+	
+	public static Sprite getTile(char cLower){
+		return tiles[cLower - 'a'];
 	}
 }

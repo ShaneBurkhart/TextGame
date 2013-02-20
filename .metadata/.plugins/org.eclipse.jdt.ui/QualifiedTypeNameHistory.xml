@@ -3,7 +3,6 @@
 <fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Texture.TextureFilter"/>
 <fullyQualifiedTypeName name="javax.swing.text.Position"/>
 <fullyQualifiedTypeName name="com.donkka.entities.FloatingButton"/>
-<fullyQualifiedTypeName name="com.donkka.art.Art"/>
 <fullyQualifiedTypeName name="com.donkka.entities.FloatingSprite"/>
 <fullyQualifiedTypeName name="com.donkka.helpers.Dimensions.Floats"/>
 <fullyQualifiedTypeName name="com.donkka.sprites.HighScore"/>
@@ -26,4 +25,5 @@
 <fullyQualifiedTypeName name="com.badlogic.gdx.Gdx"/>
 <fullyQualifiedTypeName name="com.badlogic.gdx.math.Vector2"/>
 <fullyQualifiedTypeName name="com.donkka.entities.RecentlyPlayed.RecentlyPlayedListItem"/>
+<fullyQualifiedTypeName name="com.donkka.art.Art"/>
 </qualifiedTypeNameHistroy>

@@ -31,4 +31,8 @@ public class DoubleFloatingNinePatch {
 	public Vector2 getPos(){
 		return pos;
 	}
+	
+	public Vector2 getDimensions(){
+		return dimensions;
+	}
 }

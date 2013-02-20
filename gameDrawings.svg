@@ -14,7 +14,7 @@
    height="1052.3622047"
    id="svg2"
    version="1.1"
-   inkscape:version="0.48.3.1 r9886"
+   inkscape:version="0.48.2 r9819"
    sodipodi:docname="gameDrawings.svg">
   <defs
      id="defs4">
@@ -1700,15 +1700,15 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.50077816"
-     inkscape:cx="2757.7343"
-     inkscape:cy="216.15064"
+     inkscape:cx="2691.3366"
+     inkscape:cy="2965.675"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
      showguides="true"
      inkscape:guide-bbox="true"
-     inkscape:window-width="1366"
-     inkscape:window-height="706"
+     inkscape:window-width="1600"
+     inkscape:window-height="838"
      inkscape:window-x="-8"
      inkscape:window-y="-8"
      inkscape:window-maximized="1" />
@@ -1720,7 +1720,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -7388,5 +7388,759 @@
        inkscape:export-filename="C:\Users\Shane Burkhart\Desktop\Text\Graphics\Patches\recent.png"
        inkscape:export-xdpi="90"
        inkscape:export-ydpi="90" />
+    <g
+       id="g5089"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="2109.8892"
+         height="47.25938"
+         width="47.25938"
+         id="rect4351"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,2013.687,-2113.0245)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4353"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4355"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4357" /></flowRegion><flowPara
+           id="flowPara4359">A</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4361"
+         d="m 2109.0777,-1993.2515 0,30.6425 c 23.9669,0.726 29.4221,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5097"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4423"
+         width="47.25938"
+         height="47.25938"
+         x="2167.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4425"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,2071.4565,-2113.0245)"><flowRegion
+           id="flowRegion4427"><rect
+             id="rect4429"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4431">B</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 2166.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4433"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5105"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="2227.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4437"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,2132.2043,-2113.0245)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4439"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4441"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4443" /></flowRegion><flowPara
+           id="flowPara4445">C</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4447"
+         d="m 2226.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5113"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4451"
+         width="47.25938"
+         height="47.25938"
+         x="2287.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4453"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,2189.7972,-2113.0245)"><flowRegion
+           id="flowRegion4455"><rect
+             id="rect4457"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4459">D</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 2286.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4462"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5121"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="2347.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4466"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,2253.0106,-2113.0245)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4468"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4470"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4472" /></flowRegion><flowPara
+           id="flowPara4474">E</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4476"
+         d="m 2346.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5129"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4480"
+         width="47.25938"
+         height="47.25938"
+         x="2407.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4482"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,2313.478,-2113.0946)"><flowRegion
+           id="flowRegion4484"><rect
+             id="rect4489"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4491">F</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 2406.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4493"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5137"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="2467.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4497"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,2371.0124,-2113.0245)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4499"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4501"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4503" /></flowRegion><flowPara
+           id="flowPara4505">G</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4507"
+         d="m 2466.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5145"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4511"
+         width="47.25938"
+         height="47.25938"
+         x="2527.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4513"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,2430.5334,-2113.0245)"><flowRegion
+           id="flowRegion4515"><rect
+             id="rect4517"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4519">H</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 2526.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4521"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5153"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="2587.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4525"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,2499.414,-2113.0245)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4527"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4529"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4531" /></flowRegion><flowPara
+           id="flowPara4533">I</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4535"
+         d="m 2586.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5161"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4539"
+         width="47.25938"
+         height="47.25938"
+         x="2647.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4541"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,2559.7062,-2113.1647)"><flowRegion
+           id="flowRegion4543"><rect
+             id="rect4545"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4547">J</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 2646.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4549"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5169"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="2707.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4553"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,2611.5616,-2113.0245)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4555"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4557"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4559" /></flowRegion><flowPara
+           id="flowPara4561">K</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4563"
+         d="m 2706.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5177"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4567"
+         width="47.25938"
+         height="47.25938"
+         x="2767.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4569"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,2673.5832,-2112.9544)"><flowRegion
+           id="flowRegion4571"><rect
+             id="rect4573"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4575">L</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 2766.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4577"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5185"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="2827.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4581"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,2724.9829,-2113.0946)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4583"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4585"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4587" /></flowRegion><flowPara
+           id="flowPara4589">M</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4591"
+         d="m 2826.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5193"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4595"
+         width="47.25938"
+         height="47.25938"
+         x="2887.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4597"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,2789.9958,-2113.0595)"><flowRegion
+           id="flowRegion4599"><rect
+             id="rect4601"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4603">N</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 2886.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4605"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5201"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="2947.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4609"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,2849.6102,-2113.0245)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4611"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4613"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4615" /></flowRegion><flowPara
+           id="flowPara4617">O</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4619"
+         d="m 2946.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5209"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4623"
+         width="47.25938"
+         height="47.25938"
+         x="3007.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4625"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,2912.1342,-2113.0946)"><flowRegion
+           id="flowRegion4627"><rect
+             id="rect4629"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4631">P</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 3006.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4633"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5217"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="3067.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4637"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,2967.7523,-2115.0343)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4639"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4641"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4643" /></flowRegion><flowPara
+           id="flowPara4645">Q</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4647"
+         d="m 3066.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5225"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4651"
+         width="47.25938"
+         height="47.25938"
+         x="3127.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4653"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,3031.3396,-2113.0946)"><flowRegion
+           id="flowRegion4655"><rect
+             id="rect4657"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4659">R</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 3126.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4661"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5233"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="3187.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4665"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,3094.4829,-2113.0245)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4667"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4669"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4671" /></flowRegion><flowPara
+           id="flowPara4673">S</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4675"
+         d="m 3186.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5241"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4679"
+         width="47.25938"
+         height="47.25938"
+         x="3247.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4681"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,3153.7818,-2113.0946)"><flowRegion
+           id="flowRegion4683"><rect
+             id="rect4685"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4687">T</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 3246.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4689"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5249"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="3307.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4694"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,3210.0776,-2113.1764)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4696"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4698"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4700" /></flowRegion><flowPara
+           id="flowPara4702">U</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4704"
+         d="m 3306.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5257"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4708"
+         width="47.25938"
+         height="47.25938"
+         x="3367.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4710"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,3271.8655,-2113.0245)"><flowRegion
+           id="flowRegion4712"><rect
+             id="rect4714"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4716">V</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 3366.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4718"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5265"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="3427.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4722"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,3324.165,-2113.0245)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4724"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4726"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4728" /></flowRegion><flowPara
+           id="flowPara4730">W</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4732"
+         d="m 3426.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5273"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4736"
+         width="47.25938"
+         height="47.25938"
+         x="3487.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4738"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,3393.034,-2113.0245)"><flowRegion
+           id="flowRegion4740"><rect
+             id="rect4742"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4744">X</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 3486.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4746"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
+    <g
+       id="g5281"
+       transform="translate(0,109.82907)">
+      <rect
+         y="-1992.4293"
+         x="3547.7988"
+         height="47.25938"
+         width="47.25938"
+         id="rect4751"
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+      <flowRoot
+         transform="matrix(0.95724486,0,0,0.95724486,3453.7935,-2113.0245)"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         id="flowRoot4753"
+         xml:space="preserve"><flowRegion
+           id="flowRegion4755"><rect
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri"
+             y="128.07646"
+             x="110.71429"
+             height="83.571426"
+             width="90"
+             id="rect4757" /></flowRegion><flowPara
+           id="flowPara4759">Y</flowPara></flowRoot>      <path
+         sodipodi:nodetypes="ccccc"
+         inkscape:connector-curvature="0"
+         id="path4761"
+         d="m 3546.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         style="opacity:0.17307691;fill:#ffffff;stroke:none" />
+    </g>
+    <g
+       id="g5289"
+       transform="translate(0,109.82907)">
+      <rect
+         style="fill:#dcdcdc;fill-opacity:1;stroke:#999999;stroke-width:2.74061918;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+         id="rect4765"
+         width="47.25938"
+         height="47.25938"
+         x="3607.7988"
+         y="-1992.4293" />
+      <flowRoot
+         xml:space="preserve"
+         id="flowRoot4767"
+         style="font-size:50px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:125%;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;font-family:Calibri;-inkscape-font-specification:Calibri"
+         transform="matrix(0.95724486,0,0,0.95724486,3514.0506,-2113.0245)"><flowRegion
+           id="flowRegion4769"><rect
+             id="rect4771"
+             width="90"
+             height="83.571426"
+             x="110.71429"
+             y="128.07646"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-family:Calibri;-inkscape-font-specification:Calibri" /></flowRegion><flowPara
+           id="flowPara4773">Z</flowPara></flowRoot>      <path
+         style="opacity:0.17307691;fill:#ffffff;stroke:none"
+         d="m 3606.9876,-1993.2515 0,30.6425 c 23.9669,0.726 29.422,-18.2374 48.889,-21.306 l 0,-9.3365 z"
+         id="path4775"
+         inkscape:connector-curvature="0"
+         sodipodi:nodetypes="ccccc" />
+    </g>
   </g>
 </svg>
