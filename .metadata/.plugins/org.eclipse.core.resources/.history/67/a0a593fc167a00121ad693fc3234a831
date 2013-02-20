@@ -1,7 +1,0 @@
-package com.donkka.sprites;
-
-import com.donkka.entities.FloatingSprite;
-
-public class HighScore extends FloatingSprite{
-
-}

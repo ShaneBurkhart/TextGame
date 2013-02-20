@@ -1,7 +1,0 @@
-package com.donkka.helpers;
-
-public class Positions {
-	public static float viewPortLeft = 0f;
-	public static float viewPortRop = 0f;
-	
-}
