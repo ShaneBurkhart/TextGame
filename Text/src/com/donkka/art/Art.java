@@ -2,12 +2,15 @@ package com.donkka.art;
 
 import java.util.Random;
 
-import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.assets.AssetManager;
+import com.badlogic.gdx.assets.loaders.TextureAtlasLoader;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
 import com.donkka.debug.DBug;
 
 public class Art {
+	
+	private static AssetManager manager;
 
 	private static TextureAtlas taBackground;
 	public static Sprite background;
@@ -23,16 +26,43 @@ public class Art {
 	
 	
 	public static void init(){
-		taBackground = new TextureAtlas(Gdx.files.internal("background.txt"));
-		background = taBackground.createSprite("background");
+		manager = new AssetManager();
+		manager.load("background.txt", TextureAtlas.class);
+		manager.load("patches.txt", TextureAtlas.class);
+		manager.load("tiles.txt", TextureAtlas.class);
+		manager.load("buttons.txt", TextureAtlas.class);
 		
-		taPatches = new TextureAtlas(Gdx.files.internal("patches.txt"));
-		highScorePatch = taPatches.createSprite("highscorepatch");
-		recentlyPlayedPatch = taPatches.createSprite("recent");
+		DBug.print("Manager Initialized...");
+	}
+	
+	public static boolean load(){
+		boolean loaded = manager.update();
 		
+		if(manager.isLoaded("background.txt"))
+			loadBackground();
+		
+		if(manager.isLoaded("patches.txt"))
+			loadPatches();
+		
+		if(manager.isLoaded("tiles.txt"))
+			loadTiles();
+
+		if(manager.isLoaded("buttons.txt"))
+			loadButtons();
+		
+		return loaded;
+	}
+	
+	private static void loadButtons(){
+		taButtons = manager.get("buttons.txt", TextureAtlas.class);
+		play = new Sprite(taButtons.createSprite("play"));
+		settings = taButtons.createSprite("settings");
+	}
+	
+	private static void loadTiles(){
 		largeTiles = new Sprite[9];
 		char[] letters = {'V', 'P', 'M', 'T', 'L', 'B', 'S', 'E', 'A'};
-		taTiles = new TextureAtlas(Gdx.files.internal("tiles.txt"));
+		taTiles = manager.get("tiles.txt", TextureAtlas.class);
 		for(int i = 0 ; i < letters.length ; i ++)
 			largeTiles[i] = taTiles.createSprite(letters[i] + "");
 		tiles = new Sprite[26];
@@ -41,12 +71,17 @@ public class Art {
 			tiles[i] = taTiles.createSprite(c + "");
 			c++;
 		}
-		
-		taButtons = new TextureAtlas(Gdx.files.internal("buttons.txt"));
-		play = new Sprite(taButtons.createSprite("play"));
-		settings = taButtons.createSprite("settings");
-		
-		DBug.print("Art Initialized...");
+	}
+	
+	private static void loadBackground(){
+		taBackground = manager.get("background.txt", TextureAtlas.class);
+		background = taBackground.createSprite("background");
+	}
+	
+	private static void loadPatches(){
+		taPatches = manager.get("patches.txt", TextureAtlas.class);
+		highScorePatch = taPatches.createSprite("highscorepatch");
+		recentlyPlayedPatch = taPatches.createSprite("recent");
 	}
 	
 	private static Random rand = new Random();

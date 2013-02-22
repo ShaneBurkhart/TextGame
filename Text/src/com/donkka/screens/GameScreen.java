@@ -11,7 +11,7 @@ public class GameScreen extends ShaneScreen{
 	
 	public GameScreen(){
 		recentlyPlayed = new RecentlyPlayed(75, 480);
-		tileInterface = new TileInterface(new char[] {'p', 'b'});
+		tileInterface = new TileInterface(new char[] {'p', 'b', 'c', 'z', 's', 't', 'm'});
 	}
 
 	@Override
@@ -19,7 +19,7 @@ public class GameScreen extends ShaneScreen{
 		super.render(delta);
 		batch.begin();
 		recentlyPlayed.render(batch);
-		tileInterface.render(batch);
+		tileInterface.render(batch, delta);
 		batch.end();
 	}
 	boolean tick = false;

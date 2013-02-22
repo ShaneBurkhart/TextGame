@@ -50,6 +50,9 @@ public class BackgroundLetterGenerator {
 			sort();
 			time -= RATE_TO_ADD;
 		}
+		
+		if(delta > .1f)
+			System.out.println(delta);
 	}
 	
 	private void addTile(){
