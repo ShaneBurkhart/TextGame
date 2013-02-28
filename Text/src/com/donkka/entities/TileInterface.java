@@ -7,6 +7,7 @@ import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.math.Vector2;
 import com.donkka.art.Art;
 import com.donkka.debug.DBug;
+import com.donkka.helpers.CharacterScale;
 import com.donkka.helpers.Dictionary;
 import com.donkka.helpers.Dimensions;
 import com.donkka.text.TouchEvent;
@@ -110,7 +111,7 @@ public class TileInterface {
 		do{
 			newChars = "";
 			for(int i = 0 ; i < numToAdd ; i ++)
-				newChars += (char) ('a' + rand.nextInt(26));
+				newChars += CharacterScale.getInstance().getNextChar();
 			DBug.print("Not " + newChars);
 		}while(!Dictionary.getInstance().containsValidChars(getChars() + newChars));
 		int j = 0;
