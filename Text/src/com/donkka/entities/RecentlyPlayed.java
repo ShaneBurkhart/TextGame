@@ -11,13 +11,17 @@ import com.donkka.sprites.DoubleFloatingNinePatch;
 
 public class RecentlyPlayed{
 	
-	private static final float MARGIN_X = 10;
+	private static final float SCREEN_MARGIN_X = 10;
+	private static final int NUM_ROWS = 5;
+	private static final float VERTICAL_SPACING = 15;
+	private static final float MARGIN = 20;
 
 	private RecentlyPlayedListItem[] items;
 	private DoubleFloatingNinePatch background;
 	
-	public RecentlyPlayed(float marginTop, float height){
-		background = new DoubleFloatingNinePatch(MARGIN_X, marginTop, height, RecentlyPlayedNinePatch.getInstance());
+	public RecentlyPlayed(float marginTop){
+		float height = NUM_ROWS * Art.getTile('a').getHeight() + VERTICAL_SPACING * (NUM_ROWS - 1) + MARGIN * 2;
+		background = new DoubleFloatingNinePatch(SCREEN_MARGIN_X, marginTop, height, RecentlyPlayedNinePatch.getInstance());
 		items = new RecentlyPlayed.RecentlyPlayedListItem[20];
 	}
 	
@@ -49,13 +53,11 @@ public class RecentlyPlayed{
 	
 	public class RecentlyPlayedListItem{
 		
-		private static final float MARGIN = 20;
 		private static final float ANIMATION_DURATION = .2f;
 		private float ANIM_VEL = 0;
 		private float ALPHA_VEL = 0;
-		private static final float HEIGHT = 50;
-		private static final float WIDTH = 50;
-		private static final float VERTICAL_SPACING = 15;
+		private float HEIGHT = 50;
+		private float WIDTH = 50;
 		private static final float HORIZONTAL_SPACING = 5;
 		
 		public String word;
@@ -66,6 +68,7 @@ public class RecentlyPlayed{
 		private float alpha = 0;
 		
 		public RecentlyPlayedListItem(String word){
+			this.HEIGHT = this.WIDTH = Art.getTile('a').getWidth();
 			this.word = word.toLowerCase();
 			this.pos = new Vector2(background.getPos().x + MARGIN, background.getPos().y + MARGIN);
 			this.targetPos = new Vector2(pos.x, pos.y);

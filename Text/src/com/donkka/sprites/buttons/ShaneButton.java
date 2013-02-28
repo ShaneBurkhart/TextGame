@@ -6,13 +6,25 @@ import com.badlogic.gdx.math.Vector2;
 import com.donkka.text.TouchEvent;
 
 public abstract class ShaneButton {
-	public static final float TOUCH_SCALE = 1.2f;
+	public static final float TOUCH_SCALE = 1.1f;
 	protected Sprite sprite;
 	protected Vector2 pos;
 	protected float scale = 1;
 	
 	public ShaneButton(Vector2 pos, Sprite sprite){
 		this.sprite = sprite;
+		this.pos = pos;
+	}
+	
+	public float getWidth(){
+		return sprite.getWidth();
+	}
+	
+	public float getHeight(){
+		return sprite.getHeight();
+	}
+	
+	public void setPosition(Vector2 pos){
 		this.pos = pos;
 	}
 	

@@ -19,6 +19,18 @@ public class Dictionary {
 		return instance;
 	}
 	
+	public boolean containsValidChars(String chars){
+		return lookForWord(chars.toCharArray(), 0, "");
+	}
+	
+	private boolean lookForWord(char[] chars, int index, String word){
+		if(isWord(word))
+			return true;
+		if(index > chars.length - 1)
+			return false;
+		return lookForWord(chars, index + 1, word) || lookForWord(chars, index + 1, word + chars[index]);
+	}
+	
 	public boolean isWord(String word){
 		String wordLower = word.toLowerCase();
 		int minIndex = 0;
@@ -28,7 +40,6 @@ public class Dictionary {
 		char myChar = 0, indexChar = 0;
 		int charIndex = 0;
 		while(minIndex <= maxIndex){
-			System.out.println(minIndex + " " + maxIndex);
 			charIndex = 0;
 			myChar = indexChar = 0;
 			currentIndex = (maxIndex + minIndex) / 2;
@@ -37,7 +48,6 @@ public class Dictionary {
 			if(currentWord.toLowerCase().equals(wordLower))
 				return true;
 			//Figure out where to cut down search
-			System.out.println(currentIndex);
 			while(myChar == indexChar){
 				if(charIndex > wordLower.length() - 1){
 					myChar = 0;

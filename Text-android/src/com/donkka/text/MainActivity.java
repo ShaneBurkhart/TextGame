@@ -12,7 +12,8 @@ public class MainActivity extends AndroidApplication {
         
         AndroidApplicationConfiguration cfg = new AndroidApplicationConfiguration();
         cfg.useGL20 = false;
+        cfg.useWakelock = true;
         
-        initialize(new TextGame(), cfg);
+        initialize(new TextGame(new FaceBookAndroid(this)), cfg);
     }
 }

@@ -8,7 +8,7 @@ import com.donkka.helpers.GameManager;
 import com.donkka.screens.ShaneScreen;
 
 public class FadeTransitionScreen extends ShaneScreen{
-	private final float FADE_VELOCITY = 6f;
+	private final float FADE_VELOCITY = 4f;
 	private ShaneScreen nextScreen, currentScreen;
 	private float alpha = 0;
 	private boolean isFading = true;

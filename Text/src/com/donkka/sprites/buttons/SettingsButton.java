@@ -2,8 +2,8 @@ package com.donkka.sprites.buttons;
 
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.donkka.helpers.GameManager;
-import com.donkka.screens.MainMenu;
-import com.donkka.transitions.ExitUpTransitionScreen;
+import com.donkka.screens.GameScreen;
+import com.donkka.transitions.ExitLeftTransitionScreen;
 
 public class SettingsButton extends FloatingButton{
 
@@ -21,7 +21,7 @@ public class SettingsButton extends FloatingButton{
 
 	@Override
 	public void onTouchUp(float x, float y) {
-		GameManager.getInstance().setScreen(new ExitUpTransitionScreen(GameManager.getInstance().getGame().getScreen(), new MainMenu()));
+		GameManager.getInstance().setScreen(new ExitLeftTransitionScreen(GameManager.getInstance().getGame().getScreen(), new GameScreen()));
 	}
 	
 }

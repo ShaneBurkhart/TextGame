@@ -17,6 +17,16 @@ public abstract class ShaneScreen implements Screen, InputProcessor{
 	public boolean isTransition = false;
 	protected Vector3 touchPos;
 	
+	public void setCameraPosY(float y){
+		camera.position.y = y;
+		camera.update();
+	}
+	
+	public void setCameraPosX(float x){
+		camera.position.x = x;
+		camera.update();
+	}
+	
 	public ShaneScreen(){
 		touchPos = new Vector3();
 		batch = new SpriteBatch();

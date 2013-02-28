@@ -4,6 +4,7 @@ import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.graphics.GL10;
 import com.donkka.entities.Background;
+import com.donkka.text.Timing;
 
 public class ParentGameScreen implements Screen{
 
@@ -27,6 +28,9 @@ public class ParentGameScreen implements Screen{
 	public void render(float delta) {
 		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
+		
+		if(delta > Timing.MAX_DELTA)
+			delta = Timing.MAX_DELTA;
 		
 		background.render(delta);
 		screen.render(delta);

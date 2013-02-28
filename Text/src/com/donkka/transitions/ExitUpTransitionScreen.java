@@ -13,7 +13,7 @@ public class ExitUpTransitionScreen extends ShaneScreen{
 		this.nextScreen = next;
 		this.currentScreen = current;
 		this.finalY = Dimensions.getTargetHeight() / 2;
-		this.nextScreen.camera.position.y = this.nextScreen.camera.position.y + this.nextScreen.camera.viewportHeight;
+		this.nextScreen.setCameraPosY(this.nextScreen.camera.position.y + this.nextScreen.camera.viewportHeight);
 	}
 	
 	@Override
@@ -21,12 +21,12 @@ public class ExitUpTransitionScreen extends ShaneScreen{
 		super.render(delta);
 		
 		if(currentScreen != null){
-			currentScreen.camera.position.y = Math.max(finalY - Dimensions.getTargetHeight(), currentScreen.camera.position.y - delta * slideVelocity);
+			currentScreen.setCameraPosY(Math.max(finalY - Dimensions.getTargetHeight(), currentScreen.camera.position.y - delta * slideVelocity));
 			currentScreen.render(0);
 		}
 		
 		if(nextScreen != null){
-			nextScreen.camera.position.y = Math.max(finalY, nextScreen.camera.position.y - delta * slideVelocity);
+			nextScreen.setCameraPosY(Math.max(finalY, nextScreen.camera.position.y - delta * slideVelocity));
 			nextScreen.render(0);
 		}
 		

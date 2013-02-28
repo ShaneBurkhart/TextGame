@@ -7,7 +7,6 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.donkka.art.Art;
 import com.donkka.helpers.GameManager;
-import com.donkka.transitions.FadeTransitionScreen;
 
 public class LoadingScreen implements Screen{
 
@@ -21,8 +20,12 @@ public class LoadingScreen implements Screen{
 	@Override
 	public void render(float delta) {
 		if(Art.load()){
+			//Init all screens for faster loading
+			GameManager.getInstance().initScreens();
+			
 			//Set Screen in with game manager
-			GameManager.getInstance().setScreen(new FadeTransitionScreen(null, new MainMenu()));
+			//GameManager.getInstance().setScreen(new FadeTransitionScreen(null, new MainMenu()));
+			GameManager.getInstance().setScreen(new FetchingDataScreen());
 			
 			//Add parent game manager to game
 			game.setScreen(GameManager.getInstance().getGame());

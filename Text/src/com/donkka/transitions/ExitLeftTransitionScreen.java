@@ -13,7 +13,7 @@ public class ExitLeftTransitionScreen extends ShaneScreen{
 		this.nextScreen = next;
 		this.currentScreen = current;
 		this.finalX = camera.position.x;
-		this.nextScreen.camera.position.x = this.nextScreen.camera.position.x - this.nextScreen.camera.viewportWidth;
+		this.nextScreen.setCameraPosX(this.nextScreen.camera.position.x - this.nextScreen.camera.viewportWidth);
 	}
 	
 	@Override
@@ -21,12 +21,12 @@ public class ExitLeftTransitionScreen extends ShaneScreen{
 		super.render(delta);
 		
 		if(currentScreen != null){
-			currentScreen.camera.position.x = Math.min(finalX + currentScreen.camera.viewportWidth, currentScreen.camera.position.x + delta * slideVelocity);
+			currentScreen.setCameraPosX(Math.min(finalX + currentScreen.camera.viewportWidth, currentScreen.camera.position.x + delta * slideVelocity));
 			currentScreen.render(0);
 		}
 		
 		if(nextScreen != null){
-			nextScreen.camera.position.x = Math.min(finalX, nextScreen.camera.position.x + delta * slideVelocity);
+			nextScreen.setCameraPosX(Math.min(finalX, nextScreen.camera.position.x + delta * slideVelocity));
 			nextScreen.render(0);
 		}
 		

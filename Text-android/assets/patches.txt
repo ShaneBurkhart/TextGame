@@ -2,17 +2,45 @@ patches.png
 format: RGBA8888
 filter: MipMapLinearNearest,MipMapLinearNearest
 repeat: none
+divider
+  rotate: false
+  xy: 194, 204
+  size: 100, 10
+  orig: 100, 10
+  offset: 0, 0
+  index: -1
+orange
+  rotate: false
+  xy: 404, 2
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
+green
+  rotate: false
+  xy: 404, 104
+  size: 100, 100
+  orig: 100, 100
+  offset: 0, 0
+  index: -1
 recent
   rotate: false
-  xy: 194, 2
+  xy: 296, 204
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
   index: -1
 highscorepatch
   rotate: false
-  xy: 2, 2
+  xy: 2, 204
   size: 190, 80
   orig: 190, 80
+  offset: 0, 0
+  index: -1
+dialog
+  rotate: false
+  xy: 2, 2
+  size: 400, 200
+  orig: 400, 200
   offset: 0, 0
   index: -1
