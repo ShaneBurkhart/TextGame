@@ -5,9 +5,11 @@ import com.donkka.constants.StringConstants;
 import com.donkka.dialog.ShaneDialog;
 import com.donkka.dialog.buttons.PreGameDialogButton;
 import com.donkka.entities.ButtonPanel;
+import com.donkka.entities.GameHUD;
 import com.donkka.entities.RecentlyPlayed;
 import com.donkka.entities.TileInterface;
 import com.donkka.helpers.GameManager;
+import com.donkka.helpers.Score;
 import com.donkka.helpers.Timer;
 import com.donkka.text.TouchEvent;
 
@@ -16,12 +18,14 @@ public class GameScreen extends ShaneScreen{
 	RecentlyPlayed recentlyPlayed;
 	TileInterface tileInterface;
 	ButtonPanel buttonPanel;
+	GameHUD gameHUD;
 	private boolean isReady = false;
 	
 	public GameScreen(){
 		recentlyPlayed = new RecentlyPlayed(75);
 		tileInterface = new TileInterface(recentlyPlayed);
 		buttonPanel = new ButtonPanel(tileInterface);
+		gameHUD = new GameHUD(20);
 	}
 	
 	@Override
@@ -32,7 +36,9 @@ public class GameScreen extends ShaneScreen{
 				.addButton(new PreGameDialogButton(Art.letsgo, this)));
 			isReady = true;
 		}else{
+			//Init all pregame stuff
 			Timer.getInstance().start();
+			Score.getInstance().reset();
 		}
 	}
 
@@ -43,6 +49,7 @@ public class GameScreen extends ShaneScreen{
 		recentlyPlayed.render(batch);
 		tileInterface.render(batch, delta);
 		buttonPanel.render(batch, delta);
+		gameHUD.render(batch);
 		batch.end();
 	}
 	

@@ -6,6 +6,7 @@ public class Timer {
 	
 	private long startTime;
 	private static Timer instance;
+	private boolean isStarted = false;
 	private Timer(){
 	}
 	
@@ -14,7 +15,7 @@ public class Timer {
 	}
 	
 	public long getTimeRemaining(){
-		return TIME_LIMIT_SEC - getTimeInSecondsFromStart();
+		return Math.max(TIME_LIMIT_SEC - getTimeInSecondsFromStart(), 0);
 	}
 	
 	public boolean isTimeUp(){
@@ -31,7 +32,16 @@ public class Timer {
 		return instance;
 	}
 	
+	public boolean isStarted(){
+		return isStarted;
+	}
+	
+	public void stop(){
+		isStarted = false;
+	}
+	
 	public void start(){
 		startTime = System.nanoTime();
+		isStarted = true;
 	}
 }
