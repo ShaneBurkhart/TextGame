@@ -14,9 +14,12 @@ import com.donkka.text.TouchEvent;
 
 public class TileInterface {
 	
-	private static final int NUM_CHARS = 6;
-	private static final float BANK_Y = 90f;
-	private static final float SELECTED_Y = 165f;
+	private static final int NUM_CHARS = 12;
+	private static final int NUM_ROWS = 2;
+	private static final float BANK_BOTTOM_Y = 90f;
+	private static final float BANK_SPACING = 10f;
+	private static final float BANK_SELECTED_SPACING = 20f;
+	private static final float SELECTED_Y = BANK_BOTTOM_Y + BANK_SPACING + 60 * 2 + BANK_SELECTED_SPACING;
 	private float INTERFACE_WIDTH = 0;
 	private static final float HORIZONTAL_SPACING = 8f;
 	private static final int NUM_SHUFFLES = 2;
@@ -29,22 +32,28 @@ public class TileInterface {
 		this.recentlyPlayed = recentlyPlayed;
 		rand = new Random();
 		bank = new Tile[NUM_CHARS];
-		selected = new Tile[NUM_CHARS];
+		selected = new Tile[NUM_CHARS / NUM_ROWS];
 		fillChars();
 	}
 	
 	public void render(SpriteBatch batch, float delta){
 		Tile t;
 		for(int i = 0 ; i < NUM_CHARS ; i ++){
-			for(int j = 0 ; j < 2 ; j ++){
-				t = j == 0 ? bank[i] : selected[i];
-				renderEmtpy(j, i, batch);
+				t = bank[i];
+				renderEmtpy(0, i, batch);
 				if(t == null)
 					continue;
 				t.update(delta);
 				t.render(batch);
-			}
 		}
+		for(int i = 0 ; i < selected.length ; i ++){
+			t = selected[i];
+			renderEmtpy(1, i, batch);
+			if(t == null)
+				continue;
+			t.update(delta);
+			t.render(batch);
+	}
 	}
 
 	public void shuffle(){
@@ -74,8 +83,12 @@ public class TileInterface {
 		for(int i = 0 ; i < bank.length ; i ++){
 			if(bank[i] == null)
 				continue;
-			bank[i].animate(i, BANK_Y);
+			bank[i].animate(i, calculateBankY(i));
 		}
+	}
+	
+	private float calculateBankY(int i){
+		return BANK_BOTTOM_Y + (Art.getTile('a').getHeight() + BANK_SPACING) * (int) (i / (NUM_CHARS / NUM_ROWS));
 	}
 	
 	public void recall(){
@@ -150,40 +163,53 @@ public class TileInterface {
 	public void onTouch(float x, float y, int touchEvent){
 		Tile t;
 		for(int i = 0 ; i < NUM_CHARS ; i ++){
-			for(int j = 0 ; j < 2 ; j ++){
-				t = j == 0 ? bank[i] : selected[i];
-				if(t == null)
-					continue;
-				if(t.isTouched(x, y)){
-					if(touchEvent == TouchEvent.TOUCH_UP){
-						if(j == 0)
-							bankToSelected(i);
-						else if(j == 1){
-							selectedToBank(i);
-							shrink();
-						}
-						t.deflate();
-						return;
-					}else if(touchEvent == TouchEvent.TOUCH_DOWN){
-						t.inflate();
-						return;
-					}else if(touchEvent == TouchEvent.TOUCH_DRAGGED){
-						t.inflate();
-					}
-					continue;
+			t = bank[i];
+			if(t == null)
+				continue;
+			if(t.isTouched(x, y)){
+				if(touchEvent == TouchEvent.TOUCH_UP){
+					bankToSelected(i);
+					t.deflate();
+					return;
+				}else if(touchEvent == TouchEvent.TOUCH_DOWN){
+					t.inflate();
+					return;
+				}else if(touchEvent == TouchEvent.TOUCH_DRAGGED){
+					t.inflate();
 				}
-				t.deflate();
+				continue;
 			}
+			t.deflate();
+		}
+		for(int i = 0 ; i < selected.length ; i ++){
+			t = selected[i];
+			if(t == null)
+				continue;
+			if(t.isTouched(x, y)){
+				if(touchEvent == TouchEvent.TOUCH_UP){
+					selectedToBank(i);
+					shrink();
+					t.deflate();
+					return;
+				}else if(touchEvent == TouchEvent.TOUCH_DOWN){
+					t.inflate();
+					return;
+				}else if(touchEvent == TouchEvent.TOUCH_DRAGGED){
+					t.inflate();
+				}
+				continue;
+			}
+			t.deflate();
 		}
 	}
 	
 	public void renderEmtpy(int j, int i, SpriteBatch batch){
 		float y, x;
 		if(j == 0)
-			y = BANK_Y + Art.getTile('a').getHeight() / 2 - Art.empty.getHeight() / 2;
+			y = calculateBankY(i) + Art.getTile('a').getHeight() / 2 - Art.empty.getHeight() / 2;
 		else
 			y = SELECTED_Y + Art.getTile('a').getHeight() / 2 - Art.empty.getHeight() / 2;
-		x = getLeft() + i * (Art.getTile('a').getWidth() + HORIZONTAL_SPACING) + Art.getTile('a').getWidth() / 2 - Art.empty.getWidth() / 2;
+		x = getLeft() + (i % (NUM_CHARS / NUM_ROWS)) * (Art.getTile('a').getWidth() + HORIZONTAL_SPACING) + Art.getTile('a').getWidth() / 2 - Art.empty.getWidth() / 2;
 		Art.empty.setScale(1);
 		Art.empty.setPosition(x, y);
 		Art.empty.draw(batch);
@@ -191,14 +217,14 @@ public class TileInterface {
 	
 	public void bankToSelected(int index){
 		Tile t = bank[index];
-		for(int i = 0 ; i < NUM_CHARS ; i ++){
+		for(int i = 0 ; i < NUM_CHARS / NUM_ROWS ; i ++){
 			if(selected[i] == null){
 				selected[i] = t;
 				t.animate(i, SELECTED_Y);
+				bank[index] = null;
 				break;
 			}
 		}
-		bank[index] = null;
 	}
 	
 	public void selectedToBank(int index){
@@ -206,11 +232,11 @@ public class TileInterface {
 		for(int i = 0 ; i < NUM_CHARS ; i ++){
 			if(bank[i] == null){
 				bank[i] = t;
-				t.animate(i, BANK_Y);
+				t.animate(i, calculateBankY(i));
+				selected[index] = null;
 				break;
 			}
 		}
-		selected[index] = null;
 	}
 	
 	private void shrink(){
@@ -251,9 +277,9 @@ public class TileInterface {
 		
 		public Tile(int index, char c){
 			this.WIDTH = Art.getTile(c).getWidth();
-			INTERFACE_WIDTH = WIDTH * NUM_CHARS + HORIZONTAL_SPACING * (NUM_CHARS - 1);
+			INTERFACE_WIDTH = WIDTH * NUM_CHARS / NUM_ROWS + HORIZONTAL_SPACING * (NUM_CHARS / NUM_ROWS - 1);
 			this.LEFT_X = Dimensions.getTargetWidth() / 2 - INTERFACE_WIDTH / 2;
-			pos = new Vector2(LEFT_X + index * (WIDTH + HORIZONTAL_SPACING), BANK_Y);
+			pos = new Vector2(LEFT_X + (index % (NUM_CHARS / NUM_ROWS)) * (WIDTH + HORIZONTAL_SPACING), calculateBankY(index));
 			targetPos = new Vector2(pos.x, pos.y);
 			this.c = c;
 		}
@@ -289,7 +315,7 @@ public class TileInterface {
 		}
 		
 		public void animate(int index, float y){
-			this.animate(LEFT_X + index * (WIDTH + HORIZONTAL_SPACING), y);
+			this.animate(LEFT_X + (index % (NUM_CHARS / NUM_ROWS)) * (WIDTH + HORIZONTAL_SPACING), y);
 		}
 		
 		public void animate(float x, float y){
