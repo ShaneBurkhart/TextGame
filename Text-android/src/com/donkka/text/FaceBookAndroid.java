@@ -4,8 +4,8 @@ import android.app.Activity;
 
 import com.donkka.facebook.FaceBookInterface;
 import com.facebook.Session;
-import com.facebook.SessionState;
 import com.facebook.Session.StatusCallback;
+import com.facebook.SessionState;
 
 public class FaceBookAndroid implements FaceBookInterface{
 	
@@ -19,7 +19,9 @@ public class FaceBookAndroid implements FaceBookInterface{
 	public void login() {
 		 Session.openActiveSession(this.a, true, new StatusCallback() {
 			@Override
-			public void call(Session session, SessionState state, Exception exception) {
+			public void call(com.facebook.Session session, SessionState state,
+					Exception exception) {
+				// TODO Auto-generated method stub
 				
 			}
 		});
