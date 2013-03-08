@@ -1,0 +1,59 @@
+--TGP--
+
+//DESC:		Finds a random opponent or puts you in db for looking
+//OUTPUT:	0 if added to db or opponent ID if found opponent
+int findRandomOpponent(uid);
+
+//DESC:		Gets all of the games the user is or was in.
+//OUTPUT:	{<GameID>;<Player1ID>;<Player2ID>;<Player1Name>;<Player2Name>;<Player1Score>;<Player2Score>}
+{<Data>} getGames(uid);
+
+//DESC:		Checks for the user with the specified email and password
+//OUTPUT:	0 if failed; userID otherwise
+int loginWithEmailAndPassword(e, p);
+
+//DESC:		Checks for the email
+//OUTPUT:	0 if not found 1 if exists
+int doesEmailExist(e);
+
+//DESC:		Checks for the username
+//OUTPUT:	0 if not found 1 if exists
+int doesUsernameExist(u);
+
+//DESC:		Gets UserID for facebook email.
+//OUTPUT:	UserID
+int loginWithFacebook(e, u);
+
+//DESC:		Creates User with the given email and sends them a random password.
+//OUTPUT:	Random password
+int createUserWithEmail(e, u);
+
+//DESC:		Sends a score for a User.
+//OUTPUT:	1 for success
+int submitScore(gid, uid, s);
+
+
+USER PROTOCOL
+Either use Facebook to login or email and password.  In both cases, a username needs to be asked for from user.
+									
+
+										  <<<<SCREEN ORDER>>>>>
+
+												Welcome
+													|
+									--------------------------------
+									|								|
+								Facebook 				   		  Email
+									|								|
+							-----------------				-----------------
+						  Exists 		Not Exists 		 Exists 	  Doesn't Exist
+							|				|				|				|
+							|   		Username 		Password 		Username
+							|				|				|				|
+							-------------------------------------------------
+													|
+												Fetch Data
+													|
+												Main Menu
+													|
+												Game Screen

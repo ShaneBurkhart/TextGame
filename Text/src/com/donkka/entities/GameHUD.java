@@ -1,5 +1,6 @@
 package com.donkka.entities;
 
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
 import com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment;
 import com.donkka.art.Art;
@@ -18,15 +19,19 @@ public class GameHUD{
 	
 	public void render(SpriteBatch batch){
 		String time;
+		int seconds, mins;
 		if(Timer.getInstance().isStarted()){
-			int seconds = (int) Timer.getInstance().getTimeRemaining();
-			int mins = seconds / 60;
+			seconds = (int) Timer.getInstance().getTimeRemaining();
+			mins = seconds / 60;
 			seconds = seconds % 60;
-			time = mins + ":";
-			time += seconds > 9 ? seconds : "0" + seconds;
 		}else{
-			time = "1:00";
+			seconds = (int) Timer.getInstance().getTimeLimit();
+			mins = seconds / 60;
+			seconds = seconds % 60;
 		}
+		time = mins + ":";
+		time += seconds > 9 ? seconds : "0" + seconds;
+		Art.calibri22.setColor(Color.WHITE);
 		Art.calibri22.draw(batch, time, Dimensions.getLeft() + SCREEN_MARGIN_X, Dimensions.getHeight() - marginTop);
 		Art.calibri22.drawMultiLine(batch, Score.getInstance().getScore() + "", Dimensions.getLeft(), Dimensions.getHeight() - marginTop, Dimensions.getWidth(), HAlignment.CENTER);
 	}

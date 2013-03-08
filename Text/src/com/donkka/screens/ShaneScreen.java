@@ -9,13 +9,14 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.math.Vector3;
 import com.donkka.helpers.Dimensions;
 
-public abstract class ShaneScreen implements Screen, InputProcessor{
+public class ShaneScreen implements Screen, InputProcessor{
 	
 	public OrthographicCamera camera;
 	public SpriteBatch batch;
 	public ShapeRenderer shapes;
 	public boolean isTransition = false;
 	protected Vector3 touchPos;
+	protected boolean isShowing = false;
 	
 	public void setCameraPosY(float y){
 		camera.position.y = y;
@@ -42,6 +43,10 @@ public abstract class ShaneScreen implements Screen, InputProcessor{
 
 	@Override
 	public void render(float delta) {
+		updateComponents();
+	}
+	
+	protected void updateComponents(){
 		camera.update();
 		camera.apply(Gdx.gl10);
 		batch.setProjectionMatrix(camera.combined);
@@ -63,10 +68,13 @@ public abstract class ShaneScreen implements Screen, InputProcessor{
 	@Override
 	public void show() {
 		Gdx.input.setInputProcessor(this);
+		isShowing = true;
 	}
 
 	@Override
-	public void hide() {}
+	public void hide() {
+		isShowing = false;
+	}
 
 	@Override
 	public void pause() {}

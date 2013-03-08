@@ -1,0 +1,13 @@
+doesUsernameExists function needs add.
+New username needs to check for error codes as well as if username exists
+
+Check for internet or data connection.
+
+Verify that all login screens handle errors and positive outcomes.  Ex. Error codes.
+Consolidate error codes down to a few.  0 = false ; -1 = error ; >0 = success;
+Should work for all situations.  Error output should be something along the lines of could not contact server
+or server is down.  User doesn't need to know what is happening.  
+
+Consolidate buttons to click listeners and a single ShaneButton Class.  Will make it a lot less messy when
+adding buttons to something like dialog.  Similar to the way loading dialog class works with the callback.
+

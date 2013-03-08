@@ -2,44 +2,65 @@ buttons.png
 format: RGBA8888
 filter: MipMapLinearLinear,MipMapLinearLinear
 repeat: none
+back
+  rotate: false
+  xy: 493, 112
+  size: 53, 53
+  orig: 53, 53
+  offset: 0, 0
+  index: -1
+loginfacebook
+  rotate: false
+  xy: 2, 2
+  size: 346, 59
+  orig: 346, 59
+  offset: 0, 0
+  index: -1
 recall
   rotate: false
-  xy: 625, 51
+  xy: 349, 112
   size: 142, 47
   orig: 142, 47
   offset: 0, 0
   index: -1
 play
   rotate: false
-  xy: 2, 2
+  xy: 2, 63
   size: 345, 81
   orig: 345, 81
   offset: 0, 0
   index: -1
 shuffle
   rotate: false
-  xy: 769, 2
+  xy: 493, 63
   size: 142, 47
   orig: 142, 47
   offset: 0, 0
   index: -1
 letsgo
   rotate: false
-  xy: 349, 2
+  xy: 698, 2
   size: 274, 65
   orig: 274, 65
   offset: 0, 0
   index: -1
 submit
   rotate: false
-  xy: 625, 2
+  xy: 349, 63
   size: 142, 47
   orig: 142, 47
   offset: 0, 0
   index: -1
+loginemail
+  rotate: false
+  xy: 350, 2
+  size: 346, 59
+  orig: 346, 59
+  offset: 0, 0
+  index: -1
 settings
   rotate: false
-  xy: 913, 2
+  xy: 637, 63
   size: 53, 53
   orig: 53, 53
   offset: 0, 0

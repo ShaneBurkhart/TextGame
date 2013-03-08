@@ -23,9 +23,16 @@ green
   orig: 100, 100
   offset: 0, 0
   index: -1
+cursor
+  rotate: false
+  xy: 506, 2
+  size: 2, 20
+  orig: 2, 20
+  offset: 0, 0
+  index: -1
 recent
   rotate: false
-  xy: 296, 204
+  xy: 348, 204
   size: 50, 50
   orig: 50, 50
   offset: 0, 0
@@ -37,10 +44,24 @@ highscorepatch
   orig: 190, 80
   offset: 0, 0
   index: -1
+textfield
+  rotate: false
+  xy: 296, 204
+  size: 50, 50
+  orig: 50, 50
+  offset: 0, 0
+  index: -1
 dialog
   rotate: false
   xy: 2, 2
   size: 400, 200
   orig: 400, 200
+  offset: 0, 0
+  index: -1
+selection
+  rotate: false
+  xy: 194, 216
+  size: 31, 20
+  orig: 31, 20
   offset: 0, 0
   index: -1

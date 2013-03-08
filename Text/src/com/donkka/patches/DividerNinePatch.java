@@ -8,7 +8,7 @@ public class DividerNinePatch extends NinePatch{
 	private static DividerNinePatch instance = null;
 	
 	private DividerNinePatch(){
-		super(Art.dividerPatch, 1, 0, 1, 1);
+		super(Art.dividerPatch, 1, 1, 1, 1);
 	}
 	
 	public static DividerNinePatch getInstance(){

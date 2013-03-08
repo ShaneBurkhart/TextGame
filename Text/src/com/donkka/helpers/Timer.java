@@ -19,7 +19,7 @@ public class Timer {
 	}
 	
 	public boolean isTimeUp(){
-		return getTimeRemaining() < 0;
+		return getTimeRemaining() <= 0;
 	}
 	
 	public long getTimeLimit(){

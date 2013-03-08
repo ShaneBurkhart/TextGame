@@ -6,7 +6,10 @@ import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.donkka.art.Art;
+import com.donkka.dialog.LoadingDialog;
+import com.donkka.dialog.callback.FetchGameDataCallback;
 import com.donkka.helpers.GameManager;
+import com.donkka.player.UserCredentials;
 
 public class LoadingScreen implements Screen{
 
@@ -21,11 +24,16 @@ public class LoadingScreen implements Screen{
 	public void render(float delta) {
 		if(Art.load()){
 			//Init all screens for faster loading
-			GameManager.getInstance().initScreens();
+			//GameManager.getInstance().initScreens();
 			
 			//Set Screen in with game manager
-			//GameManager.getInstance().setScreen(new FadeTransitionScreen(null, new MainMenu()));
-			GameManager.getInstance().setScreen(new FetchingDataScreen());
+			if(UserCredentials.getInstance().isFacebook() && UserCredentials.getInstance().getEmail() != ""){
+				
+			}else if(UserCredentials.getInstance().getEmail() != "" && UserCredentials.getInstance().getPassword() != ""){
+				GameManager.getInstance().setScreen(new LoadingDialog(new ShaneScreen(), new FetchGameDataCallback()));
+			}else{
+				GameManager.getInstance().setScreen(new WelcomeScreen());
+			}
 			
 			//Add parent game manager to game
 			game.setScreen(GameManager.getInstance().getGame());

@@ -44,7 +44,6 @@ public class ParentGameScreen implements Screen{
 
 	@Override
 	public void show() {
-		screen.show();
 		background.show();
 	}
 

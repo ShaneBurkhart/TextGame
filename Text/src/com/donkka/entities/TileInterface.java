@@ -10,6 +10,7 @@ import com.donkka.debug.DBug;
 import com.donkka.helpers.CharacterScale;
 import com.donkka.helpers.Dictionary;
 import com.donkka.helpers.Dimensions;
+import com.donkka.helpers.Score;
 import com.donkka.text.TouchEvent;
 
 public class TileInterface {
@@ -104,6 +105,7 @@ public class TileInterface {
 		String word = getSelectedWord();
 		if(Dictionary.getInstance().isWord(word)){
 			DBug.print("Valid Word : " + word);
+			Score.getInstance().add(Score.getWordPointValue(word));
 			removeChars();
 			fillChars();
 			recentlyPlayed.add(word);

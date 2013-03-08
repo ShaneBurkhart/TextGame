@@ -12,6 +12,6 @@ public abstract class MenuItem implements Item{
 
 	@Override
 	public void render(SpriteBatch batch, float x, float y, float width) {
-		DividerNinePatch.getInstance().draw(batch, x, y + getHeight() - 1, width, 1);
+		DividerNinePatch.getInstance().draw(batch, x - GameMenuInterface.MENU_SIDE_PADDING, y + getHeight() - 2, width + 2 * GameMenuInterface.MENU_SIDE_PADDING, 2);
 	}
 }

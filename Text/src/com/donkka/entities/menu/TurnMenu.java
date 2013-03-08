@@ -29,7 +29,8 @@ public class TurnMenu{
 		Art.arial40.draw(batch, title, Dimensions.getLeft() + GameMenuInterface.HOR_MARGIN + GameMenuInterface.MENU_SIDE_PADDING, top - GameMenuInterface.TOP_MARGIN_TEXT);
 		tempY = top - GameMenuInterface.HEADING_HEIGHT;
 		for(int i = 0 ; i < items.size() ; i ++){
-			items.get(i).render(batch, GameMenuInterface.HOR_MARGIN + GameMenuInterface.MENU_SIDE_PADDING, tempY - items.get(i).getHeight(), getWidth());
+			items.get(i).render(batch, Dimensions.getLeft() + GameMenuInterface.HOR_MARGIN + GameMenuInterface.MENU_SIDE_PADDING, tempY - items.get(i).getHeight(), getWidth());
+			tempY -= items.get(i).getHeight();
 		}
 	}
 	

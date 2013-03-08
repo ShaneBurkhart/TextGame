@@ -12,6 +12,7 @@ import com.donkka.helpers.GameManager;
 import com.donkka.helpers.Score;
 import com.donkka.helpers.Timer;
 import com.donkka.text.TouchEvent;
+import com.donkka.transitions.ExitLeftTransitionScreen;
 
 public class GameScreen extends ShaneScreen{
 	
@@ -31,6 +32,7 @@ public class GameScreen extends ShaneScreen{
 	@Override
 	public void show() {
 		super.show();
+		Score.getInstance().reset();
 		if(!isReady){
 			GameManager.getInstance().setScreen(new ShaneDialog(this, StringConstants.PREGAME_TITLE, StringConstants.PREGAME_MESSAGE, 400, 300)
 				.addButton(new PreGameDialogButton(Art.letsgo, this)));
@@ -38,7 +40,6 @@ public class GameScreen extends ShaneScreen{
 		}else{
 			//Init all pregame stuff
 			Timer.getInstance().start();
-			Score.getInstance().reset();
 		}
 	}
 
@@ -51,6 +52,11 @@ public class GameScreen extends ShaneScreen{
 		buttonPanel.render(batch, delta);
 		gameHUD.render(batch);
 		batch.end();
+		
+		if(Timer.getInstance().isTimeUp() && Timer.getInstance().isStarted()){
+			Timer.getInstance().stop();
+			GameManager.getInstance().setScreen(new ExitLeftTransitionScreen(this, new MainMenu()));
+		}
 	}
 	
 	@Override

@@ -3,9 +3,11 @@ package com.donkka.dialog;
 import java.util.ArrayList;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Color;
 import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.g2d.BitmapFont.HAlignment;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
 import com.badlogic.gdx.math.Vector2;
 import com.donkka.art.Art;
@@ -16,9 +18,26 @@ import com.donkka.sprites.buttons.ShaneButton;
 import com.donkka.text.TouchEvent;
 
 public class ShaneDialog extends ShaneScreen{
+	
+	public static ShaneDialog getServerErrorDialog(ShaneScreen under){
+		return new ShaneDialog(under, "A Problem With The Server", "We are sorry but there is a problem with the server.  Please try again later.  Sorry for your inconvienence!", 400, 400);
+	}
+	
+	@Override
+	public void setCameraPosY(float y) {
+		under.setCameraPosY(y);
+		super.setCameraPosY(y);
+	}
+
+	@Override
+	public void setCameraPosX(float x) {
+		under.setCameraPosX(x);
+		super.setCameraPosX(x);
+	}
+
 	protected static final float DIALOG_MARGIN = 20;
 	protected static final float TITLE_MESSAGE_SPACING = 25;
-	protected static final float BACKGROUND_ALPHA = .5f;
+	protected static final float BACKGROUND_ALPHA = .6f;
 	protected static final float SCALE_VEL = 8;
 	protected static final float START_SCALE = .3f;
 	protected static final float VERT_CENTER_OFFSET = 50f;
@@ -83,19 +102,12 @@ public class ShaneDialog extends ShaneScreen{
 	@Override
 	public void render(float delta) {
 		super.render(delta);
-		under.render(0);
 		
 		scale = Math.min(scale + delta * SCALE_VEL, 1);
 		width = MAX_WIDTH * scale;
 		height = MAX_HEIGHT * scale;
 		
-		Gdx.gl.glEnable(GL10.GL_BLEND);
-		Gdx.gl.glBlendFunc(GL10.GL_SRC_ALPHA, GL10.GL_ONE_MINUS_SRC_ALPHA);
-		shapes.begin(ShapeType.Filled);
-		shapes.setColor(0, 0, 0, BACKGROUND_ALPHA);
-		shapes.rect(Dimensions.getLeft(), 0, Dimensions.getWidth(), Dimensions.getHeight());
-		shapes.end();
-		Gdx.gl.glDisable(GL10.GL_BLEND);
+		drawBackground(shapes);
 		
 		batch.begin();
 		DialogNinePatch.getInstance().draw(batch, rectCenter.x - width / 2, rectCenter.y - height / 2, width, height);
@@ -107,7 +119,20 @@ public class ShaneDialog extends ShaneScreen{
 		batch.end();
 	}
 	
+	protected void drawBackground(ShapeRenderer shapes){
+		under.render(0);
+		Gdx.gl.glEnable(GL10.GL_BLEND);
+		Gdx.gl.glBlendFunc(GL10.GL_SRC_ALPHA, GL10.GL_ONE_MINUS_SRC_ALPHA);
+		shapes.begin(ShapeType.Filled);
+		shapes.setColor(0, 0, 0, BACKGROUND_ALPHA);
+		shapes.rect(Dimensions.getLeft(), 0, Dimensions.getWidth(), Dimensions.getHeight());
+		shapes.end();
+		Gdx.gl.glDisable(GL10.GL_BLEND);
+	}
+	
 	private void drawUI(SpriteBatch batch){
+		Art.calibri22.setColor(Color.WHITE);
+		Art.calibri40.setColor(Color.WHITE);
 		Art.calibri40.drawMultiLine(batch, title, rectCenter.x - MAX_WIDTH / 2 + DIALOG_MARGIN, rectCenter.y + MAX_HEIGHT / 2 - DIALOG_MARGIN, MAX_WIDTH - DIALOG_MARGIN * 2, HAlignment.CENTER);
 		Art.calibri22.drawWrapped(batch, message, rectCenter.x - MAX_WIDTH / 2 + DIALOG_MARGIN, rectCenter.y + MAX_HEIGHT / 2 - DIALOG_MARGIN - Art.calibri40.getCapHeight() - TITLE_MESSAGE_SPACING, MAX_WIDTH - DIALOG_MARGIN * 2, HAlignment.CENTER);
 		float tot = 0;

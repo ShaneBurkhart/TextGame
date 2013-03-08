@@ -27,6 +27,7 @@ public class MainMenu extends ShaneScreen{
 		settingsButton = new SettingsButton(10, 10, Dimensions.Floats.LEFT, Art.settings);
 		menuInterface = new GameMenuInterface(700);
 		menuInterface.addToYourMove(new YourTurnItem(new GameInfo(10, 100, 110, "asdf", "asdflkj")));
+		menuInterface.addToYourMove(new YourTurnItem(new GameInfo(10, 100, 110, "asdf", "dsasdD")));
 		lastTouchedScreen = new Vector3();
 		letterCamera = new OrthographicCamera(Dimensions.getWidth(), Dimensions.getHeight());
 		letterCamera.position.set(Dimensions.getWidth() / 2, Dimensions.getHeight() / 2, 0);

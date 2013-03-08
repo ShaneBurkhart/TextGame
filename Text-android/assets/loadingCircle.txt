@@ -1,0 +1,46 @@
+loadingCircle.png
+format: RGBA8888
+filter: MipMapLinearLinear,MipMapLinearLinear
+repeat: none
+1
+  rotate: false
+  xy: 380, 2
+  size: 124, 140
+  orig: 150, 150
+  offset: 13, 5
+  index: -1
+2
+  rotate: false
+  xy: 254, 2
+  size: 124, 140
+  orig: 150, 150
+  offset: 13, 5
+  index: -1
+3
+  rotate: false
+  xy: 128, 2
+  size: 124, 140
+  orig: 150, 150
+  offset: 13, 5
+  index: -1
+4
+  rotate: false
+  xy: 2, 286
+  size: 124, 140
+  orig: 150, 150
+  offset: 13, 5
+  index: -1
+5
+  rotate: false
+  xy: 2, 144
+  size: 124, 140
+  orig: 150, 150
+  offset: 13, 5
+  index: -1
+6
+  rotate: false
+  xy: 2, 2
+  size: 124, 140
+  orig: 150, 150
+  offset: 13, 5
+  index: -1

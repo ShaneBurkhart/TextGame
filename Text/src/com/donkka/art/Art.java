@@ -4,6 +4,7 @@ import java.util.Random;
 
 import com.badlogic.gdx.assets.AssetManager;
 import com.badlogic.gdx.graphics.Texture.TextureFilter;
+import com.badlogic.gdx.graphics.g2d.Animation;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
 import com.badlogic.gdx.graphics.g2d.Sprite;
 import com.badlogic.gdx.graphics.g2d.TextureAtlas;
@@ -17,14 +18,18 @@ public class Art {
 	public static Sprite background;
 	
 	private static TextureAtlas taPatches;
-	public static Sprite highScorePatch, recentlyPlayedPatch, orangePatch, greenPatch, dividerPatch, dialogPatch;
+	public static Sprite highScorePatch, recentlyPlayedPatch, orangePatch, greenPatch, dividerPatch, dialogPatch, textFieldPatch,
+						cursorPatch, selectionPatch;
 	
 	private static TextureAtlas taTiles;
 	public static Sprite[] largeTiles, tiles;
 	public static Sprite empty;
 	
 	private static TextureAtlas taButtons;
-	public static Sprite play, playTouched, settings, submit, recall, shuffle, letsgo;
+	public static Sprite play, playTouched, settings, submit, recall, shuffle, letsgo, loginFacebook, loginEmail, back;
+	
+	private static TextureAtlas taLoadingCircle;
+	public static ShaneAnimation loadingCircle;
 	
 	public static BitmapFont arial40, calibri22, calibri40;
 	
@@ -35,6 +40,7 @@ public class Art {
 		manager.load("patches.txt", TextureAtlas.class);
 		manager.load("tiles.txt", TextureAtlas.class);
 		manager.load("buttons.txt", TextureAtlas.class);
+		manager.load("loadingCircle.txt", TextureAtlas.class);
 		manager.load("fonts/40arial.fnt", BitmapFont.class);
 		manager.load("fonts/40calibri.fnt", BitmapFont.class);
 		manager.load("fonts/22calibri.fnt", BitmapFont.class);
@@ -57,6 +63,9 @@ public class Art {
 		if(manager.isLoaded("buttons.txt"))
 			loadButtons();
 		
+		if(manager.isLoaded("loadingCircle.txt"))
+			loadLoadingCircleAnimation();
+		
 		if(manager.isLoaded("fonts/40arial.fnt")){
 			arial40 = manager.get("fonts/40arial.fnt");
 			arial40.getRegion().getTexture().setFilter(TextureFilter.Linear, TextureFilter.Linear);
@@ -73,6 +82,11 @@ public class Art {
 		return loaded;
 	}
 	
+	private static void loadLoadingCircleAnimation(){
+		taLoadingCircle = manager.get("loadingCircle.txt", TextureAtlas.class);
+		loadingCircle = new ShaneAnimation(new Animation(.025f, taLoadingCircle.createSprites()));
+	}
+	
 	private static void loadButtons(){
 		taButtons = manager.get("buttons.txt", TextureAtlas.class);
 		play = new Sprite(taButtons.createSprite("play"));
@@ -87,6 +101,12 @@ public class Art {
 		linearize(submit);
 		letsgo = taButtons.createSprite("letsgo");
 		linearize(letsgo);
+		loginFacebook = taButtons.createSprite("loginfacebook");
+		linearize(loginFacebook);
+		loginEmail = taButtons.createSprite("loginemail");
+		linearize(loginEmail);
+		back = taButtons.createSprite("back");
+		linearize(back);
 	}
 	
 	private static void loadTiles(){
@@ -127,6 +147,12 @@ public class Art {
 		linearize(dividerPatch);
 		dialogPatch = taPatches.createSprite("dialog");
 		linearize(dialogPatch);
+		textFieldPatch = taPatches.createSprite("textfield");
+		linearize(textFieldPatch);
+		cursorPatch = taPatches.createSprite("cursor");
+		linearize(cursorPatch);
+		selectionPatch = taPatches.createSprite("selection");
+		linearize(selectionPatch);
 	}
 	
 	private static Random rand = new Random();
